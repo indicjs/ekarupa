@@ -18,6 +18,8 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "chai": "npm:chai@3.5.0",
     "core-js": "npm:core-js@1.2.7",
+    "fs": "github:jspm/nodelibs-fs@0.1.2",
+    "indicjs/map-converter": "github:indicjs/map-converter@master",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
