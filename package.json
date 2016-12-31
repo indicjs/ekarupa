@@ -10,9 +10,7 @@
   "jspm": {
     "name": "ekarupa",
     "dependencies": {
-      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
-      "maps": "github:indicjs/unicode-conversion-maps@dev",
-      "unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@dev"
+      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master"
     },
     "devDependencies": {
       "assert": "npm:jspm-nodelibs-assert@^0.2.0",

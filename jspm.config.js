@@ -268,8 +268,7 @@ SystemJS.config({
   ],
   map: {
     "fs": "npm:jspm-nodelibs-fs@0.2.0",
-    "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
-    "unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@dev"
+    "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master"
   },
   packages: {
     "github:indicjs/unicode-conversion-maps@master": {
