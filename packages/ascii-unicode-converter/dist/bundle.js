@@ -219,20 +219,23 @@ var define = System.amdDefine;
 System.register('ascii-unicode-converter/ascii-unicode-converter.js', ['indicjs/ekarupa', 'indicjs/unicode-conversion-maps'], function (_export, _context) {
   "use strict";
 
-  var a2u, ambili, ascii, unicode, convert;
+  var a2u, maps, ascii, unicode, convert;
   return {
     setters: [function (_indicjsEkarupa) {
       a2u = _indicjsEkarupa.asciiToUnicode;
     }, function (_indicjsUnicodeConversionMaps) {
-      ambili = _indicjsUnicodeConversionMaps.ambili;
+      maps = _indicjsUnicodeConversionMaps;
     }],
     execute: function () {
+
+      console.log(maps);
       ascii = document.getElementById('ascii');
       unicode = document.getElementById('unicode');
       convert = document.getElementById('convert');
 
       convert.addEventListener('click', function (e) {
-        unicode.value = a2u(ascii.value, ambili, {});
+        var map = document.getElementById('mapchooser');
+        unicode.value = a2u(ascii.value, maps[map.value], {});
       });
     }
   };

@@ -5,7 +5,7 @@ SystemJS.config({
     "ascii-unicode-converter/": "src/"
   },
   browserConfig: {
-    "baseURL": "/ascii-unicode-converter/"
+    "baseURL": "./"
   },
   devConfig: {
     "map": {

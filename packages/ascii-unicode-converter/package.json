@@ -7,7 +7,7 @@
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "jspm bundle src/ascii-unicode-converter.js dist/bundle.js --minfiy --skip-source-maps"
+    "build": "jspm bundle src/ascii-unicode-converter.js dist/bundle.js --skip-source-maps"
   },
   "devDependencies": {
     "jspm": "beta"
