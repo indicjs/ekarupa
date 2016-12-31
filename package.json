@@ -1,22 +1,46 @@
 {
-  "main": "lib/ekarupa.js",
+  "main": "ekarupa.js",
   "devDependencies": {
-    "jspm": "^0.16.48",
+    "jspm": "beta",
     "mocha": "^3.1.2"
   },
   "scripts": {
     "test": "mocha --delay test/main.js"
   },
   "jspm": {
+    "name": "ekarupa",
     "dependencies": {
-      "indicjs/map-converter": "github:indicjs/map-converter@master"
+      "maps": "github:indicjs/unicode-conversion-maps@dev",
+      "unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@dev"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
+      "assert": "npm:jspm-nodelibs-assert@^0.2.0",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
       "chai": "npm:chai@^3.5.0",
+      "constants": "npm:jspm-nodelibs-constants@^0.2.0",
       "core-js": "npm:core-js@^1.1.4",
-      "fs": "github:jspm/nodelibs-fs@^0.1.2"
+      "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
+      "events": "npm:jspm-nodelibs-events@^0.2.0",
+      "indicjs/map-converter": "github:indicjs/map-converter@master",
+      "os": "npm:jspm-nodelibs-os@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17",
+      "process": "npm:jspm-nodelibs-process@^0.2.0",
+      "stream": "npm:jspm-nodelibs-stream@^0.2.0",
+      "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+      "util": "npm:jspm-nodelibs-util@^0.2.0",
+      "vm": "npm:jspm-nodelibs-vm@^0.2.0"
+    },
+    "peerDependencies": {
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0"
+    },
+    "overrides": {
+      "npm:inherits@2.0.3": {
+        "ignore": [
+          "test.js"
+        ]
+      }
     }
   }
 }
