@@ -1,0 +1,14 @@
+{
+  "npm:systemjs-plugin-babel@0.0.17": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "github:indicjs/ekarupa@master": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "github:indicjs/unicode-conversion-maps@master": {
+    "deps": {},
+    "peerDeps": {}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ascii-unicode-converter",
+  "version": "0.0.1",
+  "description": "Convert between ascii and unicode",
+  "main": "index.js",
+  "repository": "https://github.com/indicjs/ascii-unicode-converter",
+  "author": "Akshay S Dinesh <asdofindia@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "jspm bundle src/ascii-unicode-converter.js dist/bundle.js --minfiy --skip-source-maps"
+  },
+  "devDependencies": {
+    "jspm": "beta"
+  },
+  "dependencies": {},
+  "jspm": {
+    "name": "ascii-unicode-converter",
+    "main": "ascii-unicode-converter.js",
+    "dependencies": {
+      "indicjs/ekarupa": "github:indicjs/ekarupa@master",
+      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
+    }
+  }
+}

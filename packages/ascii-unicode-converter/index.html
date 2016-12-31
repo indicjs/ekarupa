@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unicode conversion</title>
+  </head>
+  <body>
+    <textarea name="ascii" rows="30" cols="60" id="ascii"></textarea>
+    <button type="convert" name="button" id="convert"><=></button>
+    <textarea name="unicode" rows="30" cols="60" id="unicode"></textarea>
+    <script src="jspm_packages/system.js" charset="utf-8"></script>
+    <script src="jspm.config.js" charset="utf-8"></script>
+    <script src="dist/bundle.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      System.import('src/ascii-unicode-converter.js');
+    </script>
+  </body>
+</html>
