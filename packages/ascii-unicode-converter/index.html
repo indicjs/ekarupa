@@ -5,30 +5,32 @@
     <title>Unicode conversion</title>
   </head>
   <body>
-    <textarea name="ascii" rows="30" cols="60" id="ascii"></textarea>
-    <button type="convert" name="button" id="convert"><=></button>
-    <select name="mapchooser" id="mapchooser">
-      <optgroup label="Bangla">
-        <option value="banglapedia">Banglapedia</option>
-      </optgroup>
-      <optgroup label="Malayalam">
-        <option value="ambili">Ambili</option>
-        <option value="charaka">Charaka</option>
-        <option value="haritha">Haritha</option>
-        <option value="indulekha">Indulekha</option>
-        <option value="karthika">Karthika</option>
-        <option value="manorama">Manorama</option>
-        <option value="matweb">MatWeb</option>
-        <option value="nandini">Nandini</option>
-        <option value="panchari">Panchari</option>
-        <option value="revathi">Revathi</option>
-        <option value="uma">Uma</option>
-      </optgroup>
-      <optgroup label="Tamil">
-        <option value="valluvar">Valluvar</option>
-      </optgroup>
-    </select>
-    <textarea name="unicode" rows="30" cols="60" id="unicode"></textarea>
+    <div id="app">
+      <textarea name="ascii" rows="30" cols="60" id="ascii" v-model="inputText" v-on:change="convert" v-on:keyup="convert"></textarea>
+      <select name="mapchooser" id="mapchooser" v-on:change="convert" v-model="map">
+        <optgroup label="Bangla">
+          <option value="banglapedia">Banglapedia</option>
+        </optgroup>
+        <optgroup label="Malayalam">
+          <option value="ambili">Ambili</option>
+          <option value="charaka">Charaka</option>
+          <option value="haritha">Haritha</option>
+          <option value="indulekha">Indulekha</option>
+          <option value="karthika">Karthika</option>
+          <option value="manorama">Manorama</option>
+          <option value="matweb">MatWeb</option>
+          <option value="nandini">Nandini</option>
+          <option value="panchari">Panchari</option>
+          <option value="revathi">Revathi</option>
+          <option value="uma">Uma</option>
+        </optgroup>
+        <optgroup label="Tamil">
+          <option value="valluvar">Valluvar</option>
+        </optgroup>
+      </select>
+      <span>{{ outputText }}</span>
+    </div>
+
     <script src="jspm_packages/system.js" charset="utf-8"></script>
     <script src="jspm.config.js" charset="utf-8"></script>
     <script src="dist/bundle.js" charset="utf-8"></script>

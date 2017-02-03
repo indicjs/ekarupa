@@ -1,13 +1,17 @@
 import {asciiToUnicode as a2u} from 'indicjs/ekarupa';
 import * as maps from 'indicjs/unicode-conversion-maps';
+import Vue from 'vue';
 
-console.log(maps);
-var ascii = document.getElementById('ascii');
-// alert(ascii.value);
-var unicode = document.getElementById('unicode');
-
-var convert = document.getElementById('convert');
-convert.addEventListener('click', (e) => {
-  var map = document.getElementById('mapchooser');
-  unicode.value = a2u(ascii.value, maps[map.value], {});
-});
+var app = new Vue({
+  el: '#app',
+  data: {
+    inputText: '',
+    outputText: '',
+    map: 'ambili'
+  },
+  methods: {
+    convert: function(event) {
+      this.outputText = a2u(this.inputText, maps[this.map], {});
+    }
+  }
+})
