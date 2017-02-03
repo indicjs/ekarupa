@@ -5,7 +5,7 @@ SystemJS.config({
     "ascii-unicode-converter/": "src/"
   },
   browserConfig: {
-    "baseURL": "./"
+    "baseURL": "."
   },
   devConfig: {
     "map": {
@@ -34,7 +34,9 @@ SystemJS.config({
   ],
   map: {
     "indicjs/ekarupa": "github:indicjs/ekarupa@master",
-    "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master"
+    "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
+    "process": "npm:jspm-nodelibs-process@0.2.0",
+    "vue": "npm:vue@2.1.10"
   },
   packages: {}
 });

@@ -10,5 +10,15 @@
   "github:indicjs/unicode-conversion-maps@master": {
     "deps": {},
     "peerDeps": {}
+  },
+  "npm:vue@2.1.10": {
+    "deps": {},
+    "peerDeps": {
+      "process": "npm:jspm-nodelibs-process@^0.2.0"
+    }
+  },
+  "npm:jspm-nodelibs-process@0.2.0": {
+    "deps": {},
+    "peerDeps": {}
   }
 }

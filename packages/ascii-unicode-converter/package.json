@@ -18,10 +18,14 @@
     "main": "ascii-unicode-converter.js",
     "dependencies": {
       "indicjs/ekarupa": "github:indicjs/ekarupa@master",
-      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master"
+      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
+      "vue": "npm:vue@^2.1.10"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
+    },
+    "peerDependencies": {
+      "process": "npm:jspm-nodelibs-process@^0.2.0"
     }
   }
 }
