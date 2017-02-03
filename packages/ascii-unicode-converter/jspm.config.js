@@ -36,7 +36,7 @@ SystemJS.config({
     "indicjs/ekarupa": "github:indicjs/ekarupa@master",
     "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
     "process": "npm:jspm-nodelibs-process@0.2.0",
-    "vue": "npm:vue@2.1.10"
+    "vue": "npm:vue@2.1.10/dist/vue.js"
   },
   packages: {}
 });
