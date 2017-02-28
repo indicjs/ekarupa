@@ -8361,7 +8361,7 @@ System.registerDynamic('npm:vue@2.1.10/dist/vue.js', ['process'], true, function
     return Vue$3;
   });
 });
-System.register('ascii-unicode-converter/ascii-unicode-converter.js', ['indicjs/ekarupa', 'indicjs/unicode-conversion-maps', 'vue'], function (_export, _context) {
+System.register('ascii-unicode-converter/js/ascii-unicode-converter.js', ['indicjs/ekarupa', 'indicjs/unicode-conversion-maps', 'vue'], function (_export, _context) {
   "use strict";
 
   var a2u, maps, Vue, app;

@@ -7,12 +7,25 @@
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "jspm bundle src/ascii-unicode-converter.js dist/bundle.js --skip-source-maps"
+    "run-server": "node_modules/http-server/bin/http-server --cors -p 9000",
+    "postinstall": "cp node_modules/siimple/dist/*.min.css src/assets/ && cp node_modules/siimple-colors/dist/*.min.css src/assets/",
+    "build:css": "cp -R src/assets/ dist/",
+    "build:js": "jspm bundle src/js/ascii-unicode-converter.js dist/bundle.js --skip-source-maps",
+    "watch:js": "watch 'npm run build:js' src/js/",
+    "watch:css": "watch 'npm run build:css' src/assets/",
+    "build": "npm run build:css && npm run build:js",
+    "start": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run run-server'"
   },
   "devDependencies": {
-    "jspm": "beta"
+    "http-server": "^0.9.0",
+    "jspm": "beta",
+    "parallelshell": "latest",
+    "watch": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "siimple": "^2.0.0",
+    "siimple-colors": "0.0.2"
+  },
   "jspm": {
     "name": "ascii-unicode-converter",
     "main": "ascii-unicode-converter.js",

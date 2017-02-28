@@ -4,40 +4,54 @@
     <meta charset="utf-8">
     <title>Unicode conversion</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="dist/assets/siimple.min.css">
+    <link rel="stylesheet" href="dist/assets/siimple-colors.min.css">
+    <link rel="stylesheet" href="dist/assets/styles.css">
   </head>
   <body>
-    <div id="app">
-      <textarea name="ascii" rows="30" cols="50" id="ascii" v-model="inputText" v-on:change="convert" v-on:keyup="convert" placeholder="Enter the ascii encoded text here"></textarea>
-      <select name="mapchooser" id="mapchooser" v-on:change="convert" v-model="map">
-        <optgroup label="Bangla">
-          <option value="banglapedia">Banglapedia</option>
-        </optgroup>
-        <optgroup label="Malayalam">
-          <option value="ambili">Ambili</option>
-          <option value="charaka">Charaka</option>
-          <option value="haritha">Haritha</option>
-          <option value="indulekha">Indulekha</option>
-          <option value="karthika">Karthika</option>
-          <option value="manorama">Manorama</option>
-          <option value="matweb">MatWeb</option>
-          <option value="nandini">Nandini</option>
-          <option value="panchari">Panchari</option>
-          <option value="revathi">Revathi</option>
-          <option value="uma">Uma</option>
-        </optgroup>
-        <optgroup label="Tamil">
-          <option value="valluvar">Valluvar</option>
-        </optgroup>
-      </select>
-      <textarea name="unicode" rows="30" cols="50" id="unicode" v-model="outputText" readonly="true" placeholder="The unicode text will appear here"></textarea>
+      <div id="app" class="siimple-grid siimple-bg--navy-0">
+          <div class="siimple-grid-row" style="height:10%;">
+              <div class="siimple-grid-col siimple-grid-col--4">
+                  <label class="siimple-label siimple-color--grey-0">Pick fontmap: </label>
+                  <select name="mapchooser" id="mapchooser" v-on:change="convert" v-model="map" class="siimple-input">
+
+                      <optgroup label="Bangla">
+                          <option value="banglapedia">Banglapedia</option>
+                      </optgroup>
+                      <optgroup label="Malayalam">
+                          <option value="ambili">Ambili</option>
+                          <option value="charaka">Charaka</option>
+                          <option value="haritha">Haritha</option>
+                          <option value="indulekha">Indulekha</option>
+                          <option value="karthika">Karthika</option>
+                          <option value="manorama">Manorama</option>
+                          <option value="matweb">MatWeb</option>
+                          <option value="nandini">Nandini</option>
+                          <option value="panchari">Panchari</option>
+                          <option value="revathi">Revathi</option>
+                          <option value="uma">Uma</option>
+                      </optgroup>
+                      <optgroup label="Tamil">
+                          <option value="valluvar">Valluvar</option>
+                      </optgroup>
+                  </select>
+              </div>
+          </div>
+          <div class="siimple-grid-row" style="height:90%;">
+              <div class="siimple-grid-col siimple-grid-col--6">
+                  <textarea name="ascii" id="ascii" v-model="inputText" v-on:change="convert" v-on:keyup="convert" placeholder="Paste the ASCII encoded text here!" class="siimple-textarea" rows="40"></textarea>
+              </div>
+              <div class="siimple-grid-col siimple-grid-col--6">
+                  <textarea name="unicode" id="unicode" v-model="outputText" readonly="true" placeholder="The unicode text will appear here !" class="siimple-textarea" rows="40"></textarea>                  
+              </div>
+          </div>
     </div>
 
     <script src="jspm_packages/system.js" charset="utf-8"></script>
     <script src="jspm.config.js" charset="utf-8"></script>
     <script src="dist/bundle.js" charset="utf-8"></script>
     <script type="text/javascript">
-      System.import('src/ascii-unicode-converter.js');
+      System.import('src/js/ascii-unicode-converter.js');
     </script>
   </body>
 </html>
