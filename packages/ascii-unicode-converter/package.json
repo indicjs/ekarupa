@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "run-server": "npm run build:vendor && node_modules/http-server/bin/http-server --cors -p 9000",
-    "build:vendor" : "cp node_modules/siimple/dist/*.min.css  dist/assets/ && cp node_modules/siimple-colors/dist/*.min.css dist/assets/",
+    "build:vendor": "cp node_modules/siimple/dist/*.min.css  dist/assets/ && cp node_modules/siimple-colors/dist/*.min.css dist/assets/",
     "build:css": "cp -R src/assets/ dist/",
     "build:js": "jspm bundle src/js/ascii-unicode-converter.js dist/bundle.js --skip-source-maps",
     "watch:js": "watch 'npm run build:js' src/js/",
