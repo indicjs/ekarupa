@@ -1,6 +1,6 @@
 import {asciiToUnicode as a2u} from 'indicjs/ekarupa';
 import * as maps from 'indicjs/unicode-conversion-maps';
-import Vue from 'vue';
+import Vue from 'vue/dist/vue.min.js';
 
 var app = new Vue({
   el: '#app',
