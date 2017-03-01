@@ -7,6 +7,7 @@
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "postinstall": "node node_modules/jspm/cli.js install",
     "run-server": "npm run build:vendor && node_modules/http-server/bin/http-server --cors -p 9000",
     "build:vendor": "cp node_modules/siimple/dist/*.min.css  dist/assets/ && cp node_modules/siimple-colors/dist/*.min.css dist/assets/",
     "build:css": "cp -R src/assets/ dist/",
