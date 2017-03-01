@@ -32,7 +32,7 @@
     "dependencies": {
       "indicjs/ekarupa": "github:indicjs/ekarupa@master",
       "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
-      "vue": "npm:vue@^2.1.10"
+      "vue": "npm:vue@^2.2.1"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
