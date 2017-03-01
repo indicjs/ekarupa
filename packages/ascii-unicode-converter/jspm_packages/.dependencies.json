@@ -1,0 +1,24 @@
+{
+  "npm:jspm-nodelibs-process@0.2.0": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "npm:systemjs-plugin-babel@0.0.17": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "npm:vue@2.2.1": {
+    "deps": {},
+    "peerDeps": {
+      "process": "npm:jspm-nodelibs-process@^0.2.0"
+    }
+  },
+  "github:indicjs/unicode-conversion-maps@master": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "github:indicjs/ekarupa@master": {
+    "deps": {},
+    "peerDeps": {}
+  }
+}
