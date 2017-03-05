@@ -143,7 +143,7 @@ System.registerDynamic("github:indicjs/ekarupa@master.json", [], true, function(
       }
     }
     if (processedMap.prebase === undefined) {
-      processedMap.prebase = 'േ െ ൈ'.split(' ');
+      processedMap.prebase = 'േ െ ൈ ്ര'.split(' ');
     }
     if (processedMap.postbase === undefined) {
       processedMap.postbase = 'ാ ി ീ ു ൂ ഃ'.split(' ');

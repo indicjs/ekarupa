@@ -125,7 +125,7 @@ function preprocessMap(map) {
     }
   }
   if (processedMap.prebase === undefined) {
-    processedMap.prebase = 'േ െ ൈ'.split(' ');
+    processedMap.prebase = 'േ െ ൈ ്ര'.split(' ');
   }
   if (processedMap.postbase === undefined) {
     processedMap.postbase = 'ാ ി ീ ു ൂ ഃ'.split(' ');
