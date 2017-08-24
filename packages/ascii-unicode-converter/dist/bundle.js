@@ -68,6 +68,7 @@ System.registerDynamic('github:indicjs/ekarupa@master/dist/ekarupa.umd.js', [], 
         currChar = converted.slice(currIndex, currIndex + 1);
         if (joiningHold) {
           currChar = joiningHold + currChar;
+          joiningHold = false;
         }
         if (map.prebase.includes(currChar)) {
           if (baseFound) {
@@ -209,7 +210,7 @@ System.registerDynamic('github:indicjs/ekarupa@master/dist/ekarupa.umd.js', [], 
 
     Object.defineProperty(exports, '__esModule', { value: true });
   });
-  
+
 });
 System.registerDynamic("github:indicjs/unicode-conversion-maps@master.json", [], true, function() {
   return {
