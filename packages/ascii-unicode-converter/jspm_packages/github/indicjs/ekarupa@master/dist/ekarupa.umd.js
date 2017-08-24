@@ -34,10 +34,14 @@ function asciiToUnicode(string, map, options) {
   currIndex = 0;
   var currChar = '';
   var baseFound = false;
+  var joiningHold = false;
   var prebaseBuffer = '';
   var baseBuffer = '';
   while (currIndex < converted.length) {
     currChar = converted.slice(currIndex, currIndex + 1);
+    if (joiningHold) {
+      currChar = joiningHold + currChar;
+    }
     if (map.prebase.includes(currChar)) {
       if (baseFound) {
         postProcessed += prebaseBuffer;
@@ -46,7 +50,8 @@ function asciiToUnicode(string, map, options) {
       }
       prebaseBuffer += currChar;
     } else if (map.joiner.includes(currChar)) {
-      postProcessed += currChar;
+      joiningHold = currChar;
+      // postProcessed += currChar;
       baseFound = false;
     } else if (map.postbase.includes(currChar)) {
       postProcessed += prebaseBuffer;
@@ -141,7 +146,8 @@ function preprocessMap(map) {
   }
   if (processedMap.composition === undefined) {
     processedMap.composition = {
-      'ോ': 'ോ'
+      'ോ': 'ോ',
+      'ൊ': 'ൊ'
     };
   }
   return processedMap;

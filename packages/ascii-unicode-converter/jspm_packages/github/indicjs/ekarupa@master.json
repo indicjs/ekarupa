@@ -1,3 +1,21 @@
 {
-  "main": "dist/ekarupa.umd.js"
+  "main": "dist/ekarupa.umd.js",
+  "format": "cjs",
+  "meta": {
+    "*.json": {
+      "format": "json"
+    },
+    "dist/ekarupa.js": {
+      "format": "esm"
+    },
+    "lib/*": {
+      "format": "esm"
+    },
+    "rollup.config.js": {
+      "format": "esm"
+    },
+    "test/all.js": {
+      "format": "esm"
+    }
+  }
 }

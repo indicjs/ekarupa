@@ -966,7 +966,7 @@ jspm-registry@^0.4.1:
     rsvp "^3.0.18"
     semver "^4.3.3"
 
-jspm@beta:
+jspm@^0.17.0-beta.38:
   version "0.17.0-beta.38"
   resolved "https://registry.yarnpkg.com/jspm/-/jspm-0.17.0-beta.38.tgz#5b7577ce0ac571f876b34e78c959ac4b9448f6f5"
   dependencies:

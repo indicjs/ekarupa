@@ -1,6 +1,6 @@
 {
   "name": "ekarupa",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The core library that converts between ascii and unicode",
   "main": "dist/ekarupa.umd.js",
   "module": "dist/ekarupa.js",
