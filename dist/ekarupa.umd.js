@@ -41,6 +41,7 @@ function asciiToUnicode(string, map, options) {
     currChar = converted.slice(currIndex, currIndex + 1);
     if (joiningHold) {
       currChar = joiningHold + currChar;
+      joiningHold = false;
     }
     if (map.prebase.includes(currChar)) {
       if (baseFound) {
