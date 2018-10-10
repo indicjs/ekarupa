@@ -1,6 +1,6 @@
 {
   "name": "@indicjs/unicode-conversion-maps",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "description": "This library holds the maps that are needed for conversion from ascii to unicode",
   "main": "dist/maps.umd.js",
   "module": "dist/maps.js",

@@ -1,6 +1,6 @@
 {
   "name": "@indicjs/ekarupa",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "description": "The core library that converts between ascii and unicode",
   "main": "dist/ekarupa.umd.js",
   "module": "dist/ekarupa.js",
@@ -17,7 +17,7 @@
     "rollup-plugin-babel": "^2.7.1"
   },
   "dependencies": {
-    "@indicjs/unicode-conversion-maps": "^0.0.1-alpha.0"
+    "@indicjs/unicode-conversion-maps": "^0.0.2-alpha.0"
   },
   "gitHead": "8ec92f39252c0f11d7f7aa7380e62b7f0271c073"
 }
