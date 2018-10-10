@@ -1,6 +1,6 @@
 {
   "name": "@indicjs/unicode-conversion-maps",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "description": "This library holds the maps that are needed for conversion from ascii to unicode",
   "main": "dist/maps.umd.js",
   "module": "dist/maps.js",
@@ -16,7 +16,6 @@
     "test": "mocha",
     "prepublish": "yarn test"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-external-helpers": "^6.18.0",
