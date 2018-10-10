@@ -4,7 +4,7 @@
   "description": "The core library that converts between ascii and unicode",
   "main": "dist/ekarupa.umd.js",
   "module": "dist/ekarupa.js",
-  "repository": "https://github.com/indicjs/ekarupa",
+  "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
   "license": "AGPLv3",
   "devDependencies": {
