@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "postinstall": "node node_modules/jspm/cli.js install",
     "run-server": "yarn run build:vendor && node_modules/http-server/bin/http-server --cors -p 9000",
@@ -41,5 +41,6 @@
     "peerDependencies": {
       "process": "npm:jspm-nodelibs-process@^0.2.0"
     }
-  }
+  },
+  "gitHead": "8ec92f39252c0f11d7f7aa7380e62b7f0271c073"
 }

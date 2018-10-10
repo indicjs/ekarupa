@@ -6,7 +6,7 @@
   "module": "dist/ekarupa.js",
   "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
@@ -18,5 +18,6 @@
   },
   "dependencies": {
     "@indicjs/unicode-conversion-maps": "^0.0.1-alpha.0"
-  }
+  },
+  "gitHead": "8ec92f39252c0f11d7f7aa7380e62b7f0271c073"
 }

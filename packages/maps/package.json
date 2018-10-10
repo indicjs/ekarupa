@@ -6,7 +6,7 @@
   "module": "dist/maps.js",
   "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "prebuild": "yarn run createMaps && eslint lib test",
     "createMaps": "node scripts/createMaps.js",
@@ -25,5 +25,6 @@
     "mocha": "^3.2.0",
     "rollup": "^0.39.2",
     "rollup-plugin-babel": "^2.7.1"
-  }
+  },
+  "gitHead": "8ec92f39252c0f11d7f7aa7380e62b7f0271c073"
 }
