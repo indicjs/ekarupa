@@ -1,20 +1,20 @@
 {
-  "name": "unicode-conversion-maps",
+  "name": "@indicjs/unicode-conversion-maps",
   "version": "0.0.1",
   "description": "This library holds the maps that are needed for conversion from ascii to unicode",
   "main": "dist/maps.umd.js",
   "module": "dist/maps.js",
-  "repository": "https://github.com/indicjs/unicode-conversion-maps",
+  "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
-  "license": "MIT",
+  "license": "AGPLv3",
   "scripts": {
-    "prebuild": "npm run createMaps && eslint lib test",
+    "prebuild": "yarn run createMaps && eslint lib test",
     "createMaps": "node scripts/createMaps.js",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "pretest": "npm run build",
+    "pretest": "yarn run build",
     "test": "mocha",
-    "prepublish": "npm test"
+    "prepublish": "yarn test"
   },
   "dependencies": {},
   "devDependencies": {

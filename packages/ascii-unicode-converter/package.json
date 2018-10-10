@@ -1,21 +1,21 @@
 {
-  "name": "ascii-unicode-converter",
+  "name": "@indicjs/ascii-unicode-converter",
   "version": "0.0.1",
   "description": "Convert between ascii and unicode",
   "main": "index.js",
-  "repository": "https://github.com/indicjs/ascii-unicode-converter",
+  "repository": "https://gitlab.com/indicproject/indicjs/ekarupa",
   "author": "Akshay S Dinesh <asdofindia@gmail.com>",
-  "license": "MIT",
+  "license": "AGPLv3",
   "scripts": {
     "postinstall": "node node_modules/jspm/cli.js install",
-    "run-server": "npm run build:vendor && node_modules/http-server/bin/http-server --cors -p 9000",
+    "run-server": "yarn run build:vendor && node_modules/http-server/bin/http-server --cors -p 9000",
     "build:vendor": "cp node_modules/siimple/dist/*.min.css  dist/assets/ && cp node_modules/siimple-colors/dist/*.min.css dist/assets/",
     "build:css": "cp -R src/assets/ dist/",
     "build:js": "node node_modules/jspm/cli.js bundle src/js/ascii-unicode-converter.js dist/bundle.js --skip-source-maps",
-    "watch:js": "watch 'npm run build:js' src/js/",
-    "watch:css": "watch 'npm run build:css' src/assets/",
-    "build": "npm run build:vendor && npm run build:css && npm run build:js",
-    "start": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run run-server'"
+    "watch:js": "watch 'yarn run build:js' src/js/",
+    "watch:css": "watch 'yarn run build:css' src/assets/",
+    "build": "yarn run build:vendor && yarn run build:css && yarn run build:js",
+    "start": "parallelshell 'yarn run watch:js' 'yarn run watch:css' 'yarn run run-server'"
   },
   "devDependencies": {
     "http-server": "^0.9.0",
@@ -28,11 +28,11 @@
     "siimple-colors": "0.0.2"
   },
   "jspm": {
-    "name": "ascii-unicode-converter",
+    "name": "@indicjs/ascii-unicode-converter",
     "main": "ascii-unicode-converter.js",
     "dependencies": {
-      "indicjs/ekarupa": "github:indicjs/ekarupa@master",
-      "indicjs/unicode-conversion-maps": "github:indicjs/unicode-conversion-maps@master",
+      "@indicjs/ekarupa": "npm:@indicjs/ekarupa@^0.0.4",
+      "@indicjs/unicode-conversion-maps": "npm:@indicjs/unicode-conversion-maps@^0.0.1",
       "vue": "npm:vue@^2.2.1"
     },
     "devDependencies": {
